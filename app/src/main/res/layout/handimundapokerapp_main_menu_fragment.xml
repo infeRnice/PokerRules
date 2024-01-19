@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/handimundabackgroundloadandmenu">
+
+    <Button
+        android:id="@+id/handimundapokerapp_start_button"
+        style="@style/HandiMundaButtonStyle"
+        android:background="@drawable/handi_munda_button_background"
+        android:text="@string/start"
+        android:textAppearance="@style/handimundapokerappText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/handimundapokerapp_exit_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/handimundapokerapp_exit_button"
+        style="@style/HandiMundaButtonStyle"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/handi_munda_button_background"
+        android:text="@string/exit"
+        android:textAppearance="@style/handimundapokerappText"
+        app:layout_constraintTop_toBottomOf="@id/handimundapokerapp_start_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

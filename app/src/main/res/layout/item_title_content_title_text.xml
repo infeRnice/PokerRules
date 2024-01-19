@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Первый раздел -->
+    <TextView
+        android:id="@+id/firstTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="@style/how_to_play"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/firstContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/handiMunda"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Второй раздел -->
+    <TextView
+        android:id="@+id/secondTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="@style/how_to_play"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/secondTextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/handiMunda"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

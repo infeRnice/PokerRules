@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/handimundapokerapp_loading_fragment">
+
+    <fragment
+        android:id="@+id/handimundapokerapp_loading_fragment"
+        android:name="com.handi.munda.poker.app.guide.ui.fragments.HandiMundaPokerAppLoadingFragment"
+        android:label="Loading screen"
+        tools:layout="@layout/handimundapokerapp_loading_fragment" >
+        <action
+            android:id="@+id/action_handimundapokerapp_loading_fragment_to_handimundapokerapp_main_menu_fragment"
+            app:destination="@id/handimundapokerapp_main_menu_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/handimundapokerapp_main_menu_fragment"
+        android:name="com.handi.munda.poker.app.guide.ui.fragments.HandiMundaPokerAppMenuFragment"
+        android:label="Menu Screen"
+        tools:layout="@layout/handimundapokerapp_main_menu_fragment" >
+        <action
+            android:id="@+id/action_handimundapokerapp_main_menu_fragment_to_handimundapokerapp_firstrule_fragment"
+            app:destination="@id/handimundapokerapp_firstrule_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/handimundapokerapp_firstrule_fragment"
+        android:name="com.handi.munda.poker.app.guide.ui.fragments.HandiMundaPokerAppRuleFragment"
+        android:label="First Rule"
+        tools:layout="@layout/handimundapokerapp_firstrule_fragment">
+        <!-- Actions here -->
+        <action
+            android:id="@+id/action_to_main_menu_fragment"
+            app:destination="@id/handimundapokerapp_main_menu_fragment" />
+
+    </fragment>
+
+
+</navigation>
