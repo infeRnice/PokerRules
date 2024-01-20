@@ -18,6 +18,15 @@ class TitleImageContentItemViewHolder(
     fun bind(item: TitleImageContentItem) {
         titleTextView.text = item.title
         imageView.setImageResource(getImageResId(item.imageResId))
+
+        // Установка серого фона только для определенных правил
+        if (item.id != 2 && item.id != 5) {
+            imageView.setBackgroundResource(R.color.custom_gray)
+        } else {
+            // Убрать фон, если это правило 1 или 4
+            imageView.setBackgroundResource(0)
+        }
+
         contentTextView.text = item.content
     }
 }

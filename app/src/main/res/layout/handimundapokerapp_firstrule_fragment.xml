@@ -6,21 +6,6 @@
     android:background="@drawable/handimundabackgroundblured">
 
 
-
-<!--    <TextView
-        android:id="@+id/handi_munda_how_to_play"
-        android:layout_width="252dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="@string/how_to_play"
-        android:textAppearance="@style/how_to_play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/handimundapokerapp_back_button"
-        app:layout_constraintTop_toTopOf="parent" />-->
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/handi_munda_rule_content"
         android:layout_width="0dp"

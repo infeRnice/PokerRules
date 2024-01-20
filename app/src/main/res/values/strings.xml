@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">handi munda</string>
     <string name="start">Start</string>
     <string name="loading">Loading</string>
     <string name="exit">Exit</string>
@@ -8,5 +7,6 @@
     </string>
     <string name="next">Next</string>
     <string name="back">Back</string>
-    <string name="back_button_description">Вернуться назад</string>
+    <string name="back_button_description">Return back</string>
+    <string name="app_name">Handi Munda</string>
 </resources>

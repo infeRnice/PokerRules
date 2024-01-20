@@ -1,6 +1,5 @@
 package com.handi.munda.poker.data.repository
 
-import com.handi.munda.poker.data.R
 import com.handi.munda.poker.domain.HandiMundaPokerAppRuleItem
 import com.handi.munda.poker.domain.TitleContentGapContentItem
 import com.handi.munda.poker.domain.TitleContentItem

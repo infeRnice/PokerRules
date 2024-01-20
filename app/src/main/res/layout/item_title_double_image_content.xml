@@ -18,13 +18,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:background="@color/custom_gray"
         android:layout_marginTop="8dp"/>
 
     <ImageView
         android:id="@+id/secondImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:background="@color/custom_gray"
         android:layout_marginTop="8dp"/>
 
     <TextView

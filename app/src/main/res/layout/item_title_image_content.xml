@@ -17,7 +17,8 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
+        android:background="@color/custom_gray"
         android:layout_marginTop="16dp"
         android:layout_gravity="center_horizontal"/>
 
