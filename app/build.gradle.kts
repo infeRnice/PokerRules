@@ -22,15 +22,30 @@ android {
         }
     }
 
+    android.signingConfigs {
+        create("release") {
+            storeFile =file("keystore.jks")
+            storePassword= "newapp"
+            keyAlias ="key0"
+            keyPassword ="newapp"
+            storeType= "jks"
+        }
+    }
+
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            multiDexEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
+
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -51,13 +66,25 @@ android {
     }
 }
 
+
+
 dependencies {
 
     val nav_version = "2.7.6"
     val lifecycle_version = "2.7.0"
+    val room_version = "2.6.1"
 
     implementation(project(":domain"))
     implementation(project(":data"))
+
+    // Room
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room_version")
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$room_version")
 
     //RecycleView
     implementation("androidx.recyclerview:recyclerview:1.3.2")
